@@ -320,24 +320,112 @@
     display: flex;
     flex-direction: row;
     height: 100px;
-    width: 330px;
-    background-color: lawngreen;
+    width: 325px;
+    background-color: rgb(3,142,159);
+    border-bottom-left-radius: 50% 30px;
+    border-bottom-right-radius: 50% 30px;
 }
 
 .emptyBot{
     height: 100px;
     width: 110px;
-    background-color: lightcoral;
+    background-color: rgb(3,142,159);;
+    border-bottom-left-radius: 50% 30px;
 }
 
 .selectStart{
     height: 100px;
     width: 110px;
-    background-color: rgb(55, 0, 255);
+    background-color: rgb(3, 142, 159);
+    display: flex;
+    flex-direction: row;
+}
+
+.selectLeft{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 36.66px;
+}
+
+.selectTopLeft{
+    height: 33.33px;
+    width: 36.66px;
+}
+
+.selectMidLeft{
+    height: 25px;
+    width: 36.66px;
+}
+
+.selectButton{
+    height: 7px;
+    width: 30px;
+    background-color: rgb(54,58,61);
+    border-radius:10px/100%;
+}
+
+.selectText{
+    font-size: 10px;
+    margin-left: 2px;
+    margin-top: 1px;
+}
+
+.selectMid{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 22px;
+}
+
+.selectTopMid{
+    height: 33.33px;
+    width: 36.66px;
+}
+
+.selectMidMid{
+    height: 33.33px;
+    width: 36.66px;
+}
+
+.selectBotMid{
+    height: 33.33px;
+    width: 5px;
+}
+
+.selectRight{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 36.66px;
+}
+
+.selectTopRight{
+    height: 33.33px;
+    width: 36.66px;
+}
+
+.selectMidRight{
+    height: 25px;
+    width: 36.66px;
+}
+
+.startButton{
+    height: 7px;
+    width: 30px;
+    background-color: rgb(54,58,61);
+    border-radius:10px/100%;
+}
+
+.startText{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 1px;
 }
 
 .speaker{
     height: 100px;
-    width: 110px;
-    background-color: orange;
+    width: 105px;
+    background-color: rgb(3,142,159);
+    border-bottom-right-radius: 50% 30px;
 }

@@ -10,7 +10,7 @@
 
 .case {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(3,142,159);
     border: 3px solid rgb(14,100,120);
     border-top-left-radius: 10px;
@@ -104,15 +104,159 @@
     text-align: center;
 }
 
-.gameboylogo{
-    position: absolute;
-}
-
 .lowerCase{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom-left-radius: 50% 30px;
     border-bottom-right-radius: 50% 30px;
-    height: 565px;
-    width: 325px;
+    height: 308px;
+    width: 326px;
+    left: 10px;
+}
+
+.nintendoLogo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    color: rgb(0, 107, 128);
+}
+
+.logoLeft{
+    width: 117px;
+}
+.logoItself{
+
+    justify-self: center;
+    text-align: center;
+    width: 90px;
+    border: 2px solid rgb(0,107,128);
+    border-radius: 10px/50%;
+    
+}
+
+.logoRight{
+    width: 117px;
+}
+
+.midLower{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.leftArrows{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 30px;
+
+}
+
+.lefTop{
+    height: 30px;
+}
+
+.leftArrow{
+    height: 30px;
+    background-color: rgb(54,58,61);
+}
+
+.leftBot{
+    height: 30px;
+}
+
+.midArrows{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 30px;
+
+}
+
+.upArrow{
+    height: 30px;
+    background-color: rgb(54,58,61);
+}
+
+.center{
+    height: 30px;
+    background-color: rgb(54,58,61);
+}
+
+.downArrow{
+    height: 30px;
+    background-color: rgb(54,58,61);
+}
+
+.rightArrows{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 30px;
+
+}
+
+.rightTop{
+    height: 30px;
+}
+
+.rightArrow{
+    height: 30px;
+    background-color: rgb(54,58,61);
+}
+
+.rightBot{
+    height: 30px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 150px;
+    background-color: crimson;
+    margin-left: 60px;
+}
+
+.leftButton{
+    height: 150px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.topLeft{
+    height: 50px;
+    width: 50px;
+}
+
+.midLeft{
+    height: 50px;
+    width: 50px;
+}
+
+.buttonB{
+    height: 50px;
+    width: 50px;
+}
+
+.midButton{
+    height: 150px;
+    width: 50px;
+    background-color: white;
+}
+
+.rightButton{
+    height: 150px;
+    width: 50px;
+    background-color: chartreuse;
 }

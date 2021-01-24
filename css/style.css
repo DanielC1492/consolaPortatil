@@ -451,10 +451,8 @@
 /*Al altavoz me he permitido la licencia de inspirarme en un diseño de internet, en el que hay líneas de puntos, luego lo inclinan con skew y posteriormente le añaden los puntos semitransparentes con el ::after. */
 .speaker {
     top: 463px;
-    left: 238px;
     position: absolute;
     transform: skew(0, -10deg);
-    margin-left: 220px;
 }
 
 

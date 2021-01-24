@@ -7,20 +7,39 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!--Empezamos creando un div contenedor de la consola. Posteriormente introducimos el div
+         'gameboy para empezar a crear cajas dentro de cajas y darle perfil y forma-->
     <div class="master">
         <div class="gameboy"></div>
+
+    <!--Dividimos la carcasa en dos para posteriormente dividirla en subsegmentos
+    como 'upper case,lower case' y dentro de 'lower case' hacemos dos divs dividiendola en dos-->    
             <div class="case">
                 <div class="upperCase">
+    <!--Creamos un div 'frame' para meter los elementos que conforman la parte superior
+    de la consola,como la pantalla,la luz de encendido y su texto,etc.-->                    
                     <div class="frame">
+    <!--Dentro de el div 'powerBox' creamos tres divs distintos con la luz en si,
+    el texto de los paréntesis y el texto de power-->                   
                         <div class="powerBox">
                             <div class="powerLight"></div>
                             <div class="powerStatus">)))</div>
                             <div class="powerText">POWER</div>
                         </div>
-                        <div class="screen"></div>
+    <!--En la pantalla creamos un par de divs con el texto de game boy
+         y el de nintendo por separado-->                
+                        <div class="screen">
+                            <div class="screenLogo">GAME BOY</div>
+                            <div class="nintendoScreenLogo">NINTENDO&reg</div>
+                        </div>
                         <div class="frameEmpty"></div>
-                        <div class="gameboyLogo">Gameboy</div>
-                    </div> 
+                        <div class="logoLogo">
+                            <div class="gameboyLogo"></div>
+                        </div>    
+                            
+                    </div>
+    <!--En esta parte tenemos varios divs grandes para separar los elementos que
+    lo componen. 'nintendoLogo','midLower' para las flechas y los botones.-->                    
                 </div>
                 <div class="lowerCase">
                     <div class="nintendoLogo">
@@ -29,6 +48,10 @@
                         <div class="logoRight"></div>
                     </div>
                     <div class="midLower">
+<!--Tanto con las flechas como con los botones he decidido dividir cada uno de los divs
+en nueve más pequeños para hacerme una suerte de rejilla. Con las flechas ha sido fácil dado
+que son cinco cuadrados en orden. Con los botones tuve que jugar con la propiedad flex y
+el margen para que se adaptaran los tamaños y quedase orgánico en cuanto a posición-->
                         <div class="arrows">
 
                             <div class="leftArrows">
@@ -84,7 +107,9 @@
                     </div>
                 <div class="botLow">
                     <div class="emptyBot"></div>
-                    <div class="selectStart">
+                    <div class="selectStart">  
+<!--El sistema que he usado con el start y el select es muy similar al de la
+cruceta y los botones-->
                         <div class="selectLeft">
                             <div class="selectTopLeft"></div>
                             <div class="selectMidLeft"></div>
@@ -104,17 +129,54 @@
                         </div>
                         
                     </div>
+<!--Con el altavoz he creado lineas para los puntos-->
                     <div class="speaker">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+                        <div class="row1">    
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row2">
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row3">
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row4">
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row5">
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row6">
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row7">
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
+                        <div class="row8">    
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                          <div class="dotHole"></div>
+                        </div>
                     </div>
                 </div>
             </div> 
@@ -123,11 +185,3 @@
     </div>
 </body>
 </html>
-
-
-<!-- <div class="frame">
-                <div class="powerLight"></div>
-                <div class="powerStatus">)))</div>
-                <div class="powerText">power</div>
-                <div class="screen"></div>
-                <div class="emptyframe"></div>-->

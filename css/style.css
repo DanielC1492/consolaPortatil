@@ -1,11 +1,13 @@
 
+/*El master flexea al contenido para colocar la consola en el centro.*/
+
 .master{
     display: flex;
+    justify-content: center;
 }
 
 .gameboy{
     justify-content: center;
-    margin: ;
 }
 
 .case {
@@ -52,8 +54,8 @@
     width: 5px;
     position: absolute;
     top: 30px;
-    left: 30px;
     margin-top: 50px;
+    margin-left: 2px;
 
 }
 
@@ -104,6 +106,25 @@
     text-align: center;
 }
 
+.screenLogo{
+    background-image: linear-gradient(to right, blue 19%, green, magenta 45%, red, yellow 75%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+    font: italic bold x-large "futura", sans-serif;
+    position: relative;
+    top: 30%;
+}
+
+.nintendoScreenLogo{
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: small;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
 .lowerCase{
     display: flex;
     flex-direction: column;
@@ -144,6 +165,7 @@
     flex-direction: row;
 }
 
+/*Tanto las flechas como los botones tienen un tratamiento similar. Los botones sí que los he redondeado y les he puesto la letra correspondiente a cada uno */
 
 .arrows{
     display: flex;
@@ -184,9 +206,13 @@
 }
 
 .upArrow{
+    display: flex;
+    flex: auto;
+    justify-content: center;
     height: 30px;
     background-color: rgb(54,58,61);
 }
+
 
 .center{
     height: 30px;
@@ -422,10 +448,79 @@
     margin-left: 5px;
     margin-top: 1px;
 }
-
-.speaker{
-    height: 100px;
-    width: 105px;
-    background-color: rgb(3,142,159);
-    border-bottom-right-radius: 50% 30px;
+/*Al altavoz me he permitido la licencia de inspirarme en un diseño de internet, en el que hay líneas de puntos, luego lo inclinan con skew y posteriormente le añaden los puntos semitransparentes con el ::after. */
+.speaker {
+    top: 463px;
+    left: 238px;
+    position: absolute;
+    transform: skew(0, -10deg);
+    margin-left: 220px;
 }
+
+
+.row1 {
+  position: relative;
+  top: -8px;
+  left: 10px;
+}
+
+.row2 {
+  position: relative;
+  top: -15px;
+}
+
+.row3 {
+  position: relative;
+  top: -20px;
+  transform: rotate(180deg);
+}
+
+.row4 {
+  position: relative;
+  top: -32px;
+}
+
+.row5 {
+  position: relative;
+  top: -37px;
+  transform: rotate(180deg);
+}
+
+.row6 {
+  position: relative;
+  top: -49px;
+}
+
+.row7 {
+  position: relative;
+  top: -53px;
+  transform: rotate(180deg);
+}
+
+.row8 {
+  position: relative;
+  right: 10px;
+  top: -60px;
+  transform: rotate(180deg);
+}
+
+.dotHole {
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.dotHole::after {
+  content:"";
+  background-color: rgb(3,106,121);
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+} 
